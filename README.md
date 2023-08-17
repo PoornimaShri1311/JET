@@ -47,6 +47,8 @@ cypress-pom-cucumber/
 ├── package.json
 ├── README.md
 
+![image](https://github.com/PoornimaShri1311/JET/assets/90753791/6a8730e7-3c73-410a-a9c5-7af31db28386)
+
 e2e/: Cucumber feature files and step definitions.
 pages/: Page Object Model (POM) classes for pages.
 support/: Additional support files, including custom commands.
