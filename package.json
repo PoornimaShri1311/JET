@@ -1,0 +1,46 @@
+{
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
+    "@cypress/webpack-preprocessor": "^5.17.1",
+    "cypress": "^12.17.3",
+    "cypress-xpath": "^2.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinition": ["cypress/e2e/bdd-cucumber/features/stepDefinitions"],
+    "filterSpecs": true,
+    "omitFiltered": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber",
+      "enabled": true,
+      "formatter": "cucumber-json-formatter",
+      "output": "cypress/reports/json/cucumber-report.json"
+    }
+  },
+  "name": "c",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "npm run script ",
+    "pretty": "prettier --write \"./**/*.{yml,js,jsx,json}\"",
+    "cy:open": "cypress open --e2e",
+    "cy:run": "cypress run"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber"
+  ],
+  "author": "PS",
+  "license": "ISC",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1",
+    "cypress": "^12.17.3",
+    "esbuild": "^0.19.1",
+    "eslint": "^8.47.0",
+    "eslint-plugin-cypress": "^2.14.0",
+    "prettier": "3.0.1"
+  },
+  "description": ""
+}
