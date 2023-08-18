@@ -7,6 +7,7 @@ class careerPage {
         $button.css("border", "5px solid magenta");
       })
       .type(Searchtext);
+      cy.screenshot();
     return this;
   }
 
@@ -17,6 +18,7 @@ class careerPage {
         $button.css("border", "5px solid magenta");
       })
       .click();
+      // cy.screenshot();
   }
 
   keywordClick() {
@@ -26,6 +28,7 @@ class careerPage {
         $button.css("border", "5px solid magenta");
       })
       .click();
+      // cy.screenshot();
     return this;
   }
 
@@ -35,6 +38,7 @@ class careerPage {
         $button.css("border", "5px solid magenta");
       })
       .click();
+      // cy.screenshot();
     return this;
   }
 }

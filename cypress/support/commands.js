@@ -24,5 +24,5 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 // reference types = 'cypress-xpath'
-require('xpath')
-require('cypress-downloadfile/lib/downloadFileCommand')
+// require('xpath')
+// require('cypress-downloadfile/lib/downloadFileCommand')

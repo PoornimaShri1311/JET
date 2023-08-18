@@ -6,6 +6,7 @@ class careerSearchPage {
         $button.css("border", "5px solid magenta");
       })
       .click();
+      // cy.screenshot();
   }
 
   countryTextEntry(countryname) {
@@ -14,6 +15,7 @@ class careerSearchPage {
         $button.css("border", "5px solid magenta");
       })
       .type(countryname);
+      cy.screenshot();
   }
 
   countrySelectFromDD() {
@@ -25,6 +27,7 @@ class careerSearchPage {
         $button.css("border", "5px solid magenta");
       })
       .click();
+      cy.screenshot();
   }
 
   textEntryValidation(countrynameResult) {

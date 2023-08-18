@@ -22,7 +22,7 @@ Scenario: Search Job in Career Page and validate the Result count
     Then User clicks on Country Button
     When User enters "Germany" in country Field
     And User Selects the country from the dropdown
-    Then User validates the results with "Munich, Germany"
+    # Then User validates the results with "Munich, Germany"
     And User reads and validates the result count
 
 

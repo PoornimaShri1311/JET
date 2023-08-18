@@ -7,8 +7,25 @@ const createEsbuildPlugin =
   require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 
 module.exports = defineConfig({
+  reporter: "cypress-multi-reporters",
+  reporterOptions: {
+    charts: true,
+    reportPageTitle: "Cypress Inline Reporter",
+    embeddedScreenshots: true,
+    inlineAssets: true, //Adds the asserts inline
+    reporterEnabled: "mochawesome",
+    mochawesomeReporterOptions: {
+      reportDir: "cypress/reports/mocha",
+      quite: true,
+      overwrite: false,
+      html: true,
+      json: true
+    },
+    "screenshotOnRunFailure": true,
+  },
   e2e: {
     async setupNodeEvents(on, config) {
+      require("cypress-mochawesome-reporter/plugin")(on);
       const bundler = createBundler({
         plugins: [createEsbuildPlugin(config)],
       });
@@ -27,5 +44,6 @@ module.exports = defineConfig({
     chromeWebSecurity: false,
     experimentalModifyObstructiveThirdPartyCode: true,
     defaultCommandTimeout: 10000,
+    video: false,
   },
 });
