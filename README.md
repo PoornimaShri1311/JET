@@ -57,7 +57,7 @@ cypress.config.js: Cypress configuration file.
 
 Running Tests
 Open the Cypress test runner:
-npx cypress open (or) npx cypress open --env TAGS="@smoke"
+npx cypress open --env TAGS="@smoke"
 Click on a feature file to execute the scenarios using the Cypress GUI.
 
 
