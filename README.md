@@ -12,7 +12,7 @@ Familiarity with Cypress and Cucumber.
 
 Installation
 Clone this repository:
-git clone https://github.com/PoornimaShri1311/JET.git
+git clone https://github.com/PoornimaShri1311/JET/tree/MasterGB
 
 Install project dependencies:
 npm install
